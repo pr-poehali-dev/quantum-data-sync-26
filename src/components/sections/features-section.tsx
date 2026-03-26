@@ -86,11 +86,11 @@ export function FeaturesSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          Возможности
+          О мюзикле
         </motion.p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Typography Card */}
+          {/* История Card */}
           <motion.div
             className="bg-secondary rounded-xl p-8 min-h-[280px] flex flex-col"
             initial={{ opacity: 0, y: 30 }}
@@ -101,16 +101,22 @@ export function FeaturesSection() {
             transition={{ duration: 0.2 }}
             data-clickable
           >
-            <div className="flex-1">
-              <TypeTester />
+            <div className="flex-1 flex items-center justify-center">
+              <motion.span
+                className="font-serif text-7xl md:text-8xl text-foreground"
+                animate={{ opacity: [0.4, 1, 0.4] }}
+                transition={{ duration: 3, repeat: Infinity }}
+              >
+                2001
+              </motion.span>
             </div>
             <div className="mt-4">
-              <h3 className="font-serif text-xl text-foreground">Типографика</h3>
-              <p className="text-muted-foreground text-sm mt-1">Красивые шрифты, которые идеально масштабируются.</p>
+              <h3 className="font-serif text-xl text-foreground">Год рождения</h3>
+              <p className="text-muted-foreground text-sm mt-1">Премьера во Франции. Жерар Пресгурвик создал легенду, покорившую весь мир.</p>
             </div>
           </motion.div>
 
-          {/* Layouts Card */}
+          {/* Россия Card */}
           <motion.div
             className="bg-secondary rounded-xl p-8 min-h-[280px] flex flex-col"
             initial={{ opacity: 0, y: 30 }}
@@ -121,16 +127,22 @@ export function FeaturesSection() {
             whileTap={{ scale: 0.96 }}
             data-clickable
           >
-            <div className="flex-1">
-              <LayoutAnimation />
+            <div className="flex-1 flex items-center justify-center">
+              <motion.span
+                className="font-serif text-7xl md:text-8xl text-foreground"
+                animate={{ scale: [1, 1.1, 1] }}
+                transition={{ duration: 3, repeat: Infinity }}
+              >
+                ♥
+              </motion.span>
             </div>
             <div className="mt-4">
-              <h3 className="font-serif text-xl text-foreground">Макеты</h3>
-              <p className="text-muted-foreground text-sm mt-1">Гибкие сетки, которые адаптируются под контент.</p>
+              <h3 className="font-serif text-xl text-foreground">Российская версия</h3>
+              <p className="text-muted-foreground text-sm mt-1">2004 год, театр «Московская оперетта». Перевод Наума Олева, хит 2000-х.</p>
             </div>
           </motion.div>
 
-          {/* Speed Card */}
+          {/* Хит Card */}
           <motion.div
             className="bg-secondary rounded-xl p-8 min-h-[280px] flex flex-col"
             initial={{ opacity: 0, y: 30 }}
@@ -141,12 +153,22 @@ export function FeaturesSection() {
             whileTap={{ scale: 0.96 }}
             data-clickable
           >
-            <div className="flex-1">
-              <SpeedIndicator />
+            <div className="flex flex-col items-center justify-center h-full gap-2">
+              <span className="text-3xl md:text-4xl font-sans font-medium text-foreground">10M+</span>
+              <span className="text-sm text-muted-foreground">просмотров на YouTube</span>
+              <div className="w-full max-w-[120px] h-1.5 bg-foreground/10 rounded-full overflow-hidden mt-2">
+                <motion.div
+                  className="h-full bg-primary rounded-full"
+                  initial={{ width: 0 }}
+                  whileInView={{ width: "100%" }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 1.5, ease: "easeOut" }}
+                />
+              </div>
             </div>
             <div className="mt-4">
-              <h3 className="font-serif text-xl text-foreground">Скорость</h3>
-              <p className="text-muted-foreground text-sm mt-1">Молниеносная загрузка страниц для ваших гостей.</p>
+              <h3 className="font-serif text-xl text-foreground">Культурный феномен</h3>
+              <p className="text-muted-foreground text-sm mt-1">Визитная карточка мюзикла — «Короли ночной Вероны» узнают с первых нот.</p>
             </div>
           </motion.div>
         </div>

@@ -72,14 +72,18 @@ export function HeroSection() {
       </div>
 
       <motion.div
-        className="absolute inset-0 flex items-center justify-center pointer-events-none z-10"
+        className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none z-10 gap-4"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.8 }}
       >
+        <p className="text-xs md:text-sm uppercase tracking-[0.3em] text-foreground/60 mix-blend-difference">Мюзикл · Жерар Пресгурвик</p>
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-center text-foreground mix-blend-difference">
-          Ваши работы, <em className="italic">в фокусе</em>.
+          Ромео <em className="italic">и</em> Джульетта
         </h1>
+        <p className="text-base md:text-xl font-serif italic text-foreground/70 mix-blend-difference">
+          «Короли ночной Вероны»
+        </p>
       </motion.div>
 
       <motion.div

@@ -17,19 +17,19 @@ export function ManifestoSection() {
     >
       <div className="max-w-5xl mx-auto relative">
         <h2 className="text-4xl md:text-6xl lg:text-7xl font-serif leading-tight text-center text-foreground/10">
-          Хватит делать сайты.
+          Рождены мы для любви,
           <br />
-          Пора рассказывать истории.
+          а в ней мы просто короли.
         </h2>
 
         {/* Gradient mask reveal text */}
         <motion.h2
-          className="absolute inset-0 text-4xl md:text-6xl lg:text-7xl font-serif leading-tight text-center bg-gradient-to-r from-purple-700 via-purple-400 to-purple-700 bg-clip-text text-transparent"
+          className="absolute inset-0 text-4xl md:text-6xl lg:text-7xl font-serif leading-tight text-center bg-gradient-to-r from-rose-800 via-amber-500 to-rose-800 bg-clip-text text-transparent"
           style={{ clipPath }}
         >
-          Хватит делать сайты.
+          Рождены мы для любви,
           <br />
-          Пора рассказывать истории.
+          а в ней мы просто короли.
         </motion.h2>
       </div>
     </section>

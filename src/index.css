@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -6,32 +6,32 @@
 
 @layer base {
   :root {
-    /* Folio Lilac & Ink Theme */
-    --background: 270 20% 99%;
-    --foreground: 270 63% 6%;
-    --surface: 270 20% 96%;
-    --ink: 270 63% 6%;
-    --iris: 263 70% 42%;
-    --lilac: 270 89% 85%;
-    --lime: 82 85% 80%;
-    --muted-foreground: 270 8% 43%;
+    /* Romeo & Juliet — Dark Romance Theme */
+    --background: 350 15% 97%;
+    --foreground: 350 40% 8%;
+    --surface: 350 12% 93%;
+    --ink: 350 40% 8%;
+    --iris: 350 65% 35%;
+    --lilac: 42 85% 68%;
+    --lime: 42 85% 68%;
+    --muted-foreground: 350 10% 42%;
 
-    --card: 270 20% 96%;
-    --card-foreground: 270 63% 6%;
-    --popover: 270 20% 99%;
-    --popover-foreground: 270 63% 6%;
-    --primary: 263 70% 42%;
-    --primary-foreground: 270 20% 99%;
-    --secondary: 270 20% 96%;
-    --secondary-foreground: 270 63% 6%;
-    --muted: 270 20% 96%;
-    --accent: 270 89% 85%;
-    --accent-foreground: 270 63% 6%;
+    --card: 350 12% 93%;
+    --card-foreground: 350 40% 8%;
+    --popover: 350 15% 97%;
+    --popover-foreground: 350 40% 8%;
+    --primary: 350 65% 30%;
+    --primary-foreground: 42 85% 90%;
+    --secondary: 350 12% 93%;
+    --secondary-foreground: 350 40% 8%;
+    --muted: 350 12% 93%;
+    --accent: 42 85% 68%;
+    --accent-foreground: 350 40% 8%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
-    --border: 270 15% 92%;
-    --input: 270 15% 92%;
-    --ring: 263 70% 42%;
+    --border: 350 12% 88%;
+    --input: 350 12% 88%;
+    --ring: 350 65% 30%;
 
     --radius: 0.75rem;
 
@@ -46,25 +46,25 @@
   }
 
   .dark {
-    --background: 270 10% 8%;
-    --foreground: 270 10% 98%;
-    --card: 270 10% 8%;
-    --card-foreground: 270 10% 98%;
-    --popover: 270 10% 8%;
-    --popover-foreground: 270 10% 98%;
-    --primary: 270 10% 98%;
-    --primary-foreground: 270 10% 12%;
-    --secondary: 270 10% 16%;
-    --secondary-foreground: 270 10% 98%;
-    --muted: 270 10% 16%;
-    --muted-foreground: 270 5% 60%;
-    --accent: 270 10% 16%;
-    --accent-foreground: 270 10% 98%;
+    --background: 350 25% 6%;
+    --foreground: 42 60% 88%;
+    --card: 350 25% 9%;
+    --card-foreground: 42 60% 88%;
+    --popover: 350 25% 6%;
+    --popover-foreground: 42 60% 88%;
+    --primary: 42 80% 65%;
+    --primary-foreground: 350 40% 8%;
+    --secondary: 350 20% 12%;
+    --secondary-foreground: 42 60% 88%;
+    --muted: 350 20% 12%;
+    --muted-foreground: 350 10% 55%;
+    --accent: 350 20% 12%;
+    --accent-foreground: 42 60% 88%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
-    --border: 270 10% 16%;
-    --input: 270 10% 16%;
-    --ring: 270 5% 50%;
+    --border: 350 20% 14%;
+    --input: 350 20% 14%;
+    --ring: 42 80% 65%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -83,8 +83,13 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
   }
+}
+
+/* Romeo & Juliet serif overrides */
+.font-serif {
+  font-family: "Cormorant Garamond", Georgia, serif !important;
 }
 
 /* Custom cursor styles */
@@ -94,7 +99,8 @@
 
 /* Serrated ticket edge */
 .ticket-edge {
-  mask-image: radial-gradient(circle at 0 50%, transparent 8px, black 8px),
+  mask-image:
+    radial-gradient(circle at 0 50%, transparent 8px, black 8px),
     radial-gradient(circle at 100% 50%, transparent 8px, black 8px);
   mask-size: 51% 100%;
   mask-position: left, right;

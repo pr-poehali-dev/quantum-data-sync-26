@@ -5,24 +5,24 @@ import { ArrowRight } from "lucide-react"
 
 const articles = [
   {
-    title: "Искусство визуального сторителлинга",
-    category: "Дизайн",
+    title: "«Короли ночной Вероны» — история создания хита",
+    category: "История",
+    image: "/fashion-photography-editorial-black-and-white.jpg",
+  },
+  {
+    title: "Жерар Пресгурвик: гений французского мюзикла",
+    category: "Автор",
+    image: "/fashion-model-editorial-portrait-dramatic-lighting.jpg",
+  },
+  {
+    title: "Российская постановка: от Олева до Цискаридзе",
+    category: "Постановка",
     image: "/visual-storytelling-design-article.jpg",
   },
   {
-    title: "Как создать личный бренд онлайн",
-    category: "Стратегия",
+    title: "Свобода, бунт и любовь — темы мюзикла сквозь эпохи",
+    category: "Смыслы",
     image: "/personal-branding-digital-marketing.jpg",
-  },
-  {
-    title: "Тренды типографики 2025",
-    category: "Типографика",
-    image: "/typography-trends-modern-fonts.jpg",
-  },
-  {
-    title: "Минимализм в дизайне портфолио",
-    category: "Вдохновение",
-    image: "/placeholder.svg?height=200&width=300",
   },
 ]
 
@@ -43,7 +43,7 @@ export function InsightsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          Статьи
+          О постановке
         </motion.p>
 
         <div className="divide-y divide-border">

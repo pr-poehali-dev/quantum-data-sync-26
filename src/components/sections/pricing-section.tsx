@@ -3,18 +3,18 @@ import { Check } from "lucide-react"
 
 const plans = [
   {
-    name: "Старт",
-    price: "1 200",
-    period: " руб/мес",
-    description: "Для личного портфолио",
-    features: ["5 страниц", "Свой домен", "Базовая аналитика", "Поддержка по email"],
+    name: "Партер",
+    price: "2 500",
+    period: " руб",
+    description: "Стандартные места",
+    features: ["Вид на всю сцену", "Программка в подарок", "Аудиогид по мюзиклу", "Электронный билет"],
   },
   {
-    name: "Про",
-    price: "2 900",
-    period: " руб/мес",
-    description: "Для растущих авторов",
-    features: ["Безлимит страниц", "Приоритет поддержки", "Расширенная аналитика", "Свой брендинг", "Работа в команде"],
+    name: "VIP-ложа",
+    price: "5 900",
+    period: " руб",
+    description: "Незабываемый вечер",
+    features: ["Места первого ряда", "Встреча с актёрами", "Фото на сцене", "Бокал шампанского", "Автограф исполнителей"],
     popular: true,
   },
 ]
@@ -29,8 +29,8 @@ export function PricingSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-5xl font-serif text-foreground">Простые и понятные цены</h2>
-          <p className="text-muted-foreground mt-4 max-w-md mx-auto">Начните бесплатно, платите когда готовы.</p>
+          <h2 className="text-3xl md:text-5xl font-serif text-foreground">Билеты на спектакль</h2>
+          <p className="text-muted-foreground mt-4 max-w-md mx-auto">Выберите свои места — и окунитесь в атмосферу ночной Вероны.</p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
@@ -75,7 +75,7 @@ export function PricingSection() {
                     : "bg-secondary text-foreground hover:bg-accent/30"
                 }`}
               >
-                Начать
+                Купить билет
               </button>
             </motion.div>
           ))}

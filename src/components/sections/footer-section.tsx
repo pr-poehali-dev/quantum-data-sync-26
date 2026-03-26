@@ -3,10 +3,10 @@ import { motion } from "framer-motion"
 import { ArrowRight } from "lucide-react"
 
 const footerLinks = [
-  { label: "Шаблоны", href: "#" },
+  { label: "О мюзикле", href: "#" },
   { label: "Галерея", href: "#" },
-  { label: "Цены", href: "#" },
-  { label: "Войти", href: "#" },
+  { label: "Билеты", href: "#" },
+  { label: "Контакты", href: "#" },
 ]
 
 export function FooterSection() {
@@ -16,7 +16,7 @@ export function FooterSection() {
     <footer className="relative bg-background px-6 py-24 overflow-hidden">
       {/* Gradient blob */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] pointer-events-none">
-        <div className="absolute inset-0 bg-gradient-to-tr from-purple-300 via-purple-200 to-lime-200 opacity-40 blur-3xl rounded-full" />
+        <div className="absolute inset-0 bg-gradient-to-tr from-rose-300 via-red-200 to-amber-200 opacity-40 blur-3xl rounded-full" />
       </div>
 
       <div className="relative max-w-6xl mx-auto">
@@ -24,12 +24,12 @@ export function FooterSection() {
           {/* Logo and links */}
           <div>
             <motion.h2
-              className="text-6xl md:text-8xl font-serif text-foreground"
+              className="text-5xl md:text-7xl font-serif text-foreground italic"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              FOLIO.
+              Ромео<br /><span className="not-italic text-primary">&</span> Джульетта
             </motion.h2>
 
             <nav className="flex flex-wrap gap-6 mt-8">
@@ -52,7 +52,7 @@ export function FooterSection() {
 
           {/* Email signup */}
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-            <p className="text-muted-foreground text-sm mb-4">Получайте новости о шаблонах и обновлениях.</p>
+            <p className="text-muted-foreground text-sm mb-4">Узнавайте первыми о датах показов и специальных предложениях.</p>
             <form onSubmit={(e) => e.preventDefault()} className="flex gap-2">
               <input
                 type="email"
@@ -73,7 +73,7 @@ export function FooterSection() {
         </div>
 
         <div className="mt-16 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-muted-foreground text-sm">2025 FOLIO. Все права защищены.</p>
+          <p className="text-muted-foreground text-sm">2026 Ромео и Джульетта. Все права защищены.</p>
           <div className="flex gap-6">
             <a href="#" className="text-muted-foreground hover:text-foreground text-sm" data-clickable>
               Конфиденциальность
